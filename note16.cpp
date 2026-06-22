@@ -10,12 +10,13 @@ class complex{
             b = imaginary_no;
 
         }
-
+        
         void complexSum(complex cn1, complex cn2){
             a = cn1.a + cn2.a;
             b = cn1.b + cn2.b;
 
-        }
+        } 
+        // YES!!! We can use complex as parameter inside its own class
 
         void printData(){
             cout<<"The Complex number is "<<a<<"+"<<b<<"i"<<endl;
