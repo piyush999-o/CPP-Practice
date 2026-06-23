@@ -34,6 +34,8 @@ int main(){
     c2.setData(4, 5);
     c2.printComplex();
 
+    // We have to call like this:
+    // c3.complexSum is not valid here, unlike in note16
     c3 = complexSum(c1, c2);
     c3.printComplex();
 
