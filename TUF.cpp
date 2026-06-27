@@ -3,14 +3,72 @@
 using namespace std;
 
 void pattern5(int n) {
-        for(int i=1; i<=n; i++){
-            for(int j=n; j>=i; j--){
-                cout<<n-j+1;
+        for(int i=0; i<n; i++){
+            for(int j=0; j<(n-i-1); j++){
+                cout<<" ";
+            }
+            for(int k=0; k<(2*i+1); k++){
+                cout<<"*";
             }
             cout<<endl;
         }
+        for(int i=0; i<n; i++){
+            for(int j=0; j<i; j++){
+                cout<<" ";
+
+            }
+            // cout<<"K";
+            for(int k=0; k<(2*n-2*i-1); k++){
+                cout<<"*";
+            }
+            cout<<endl;
+        }
+
+
+        // for(int i=0; i<n; i++){
+        //     for(int j=0; j<=(n-i-1); j++){
+        //         cout<<" ";
+        //     }
+        //     for(int k=0; k<(2*i-1); k++){
+        //         cout<<"*";
+        //     }
+        //     cout<<endl;
+        // }
+        // for(int i=0; i<n; i++){
+        //     for(int j=0; j<i; j++){
+        //         cout<<" ";
+
+        //     }
+        //     // cout<<"K";
+        //     for(int k=0; k<(2*n-2*i-1); k++){
+        //         cout<<"*";
+        //     }
+        //     cout<<endl;
+        // }
     }
 int main(){
-    pattern5(9);
+    pattern5(5);
     return 0;
 }
+
+/*
+
+N=3
+
+  *
+ ***
+*****
+*****
+ ***
+  *
+
+   *
+  ***
+ *****
+*******
+*******
+ *****
+  ***
+   *
+
+*/
